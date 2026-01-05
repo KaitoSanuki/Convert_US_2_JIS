@@ -36,7 +36,7 @@ CONVERSION_TABLE: List[Tuple[str, List[str], str, str]] = [
     ("JP_QUOTE", ["SINGLE_QUOTE", "SQT", "APOS"], "AMPERSAND", "'"),
     ("JP_EQUAL", ["EQUAL", "EQL"], "UNDERSCORE", "="),
     ("JP_CARET", ["CARET"], "EQUAL", "^"),
-    ("JP_YEN", ["YEN"], "0x89", "¥"),
+    ("JP_YEN", ["YEN", "BACKSLASH"], "0x89", "¥"),
     ("JP_PLUS", ["PLUS"], "COLON", "+"),
     ("JP_TILDE", ["TILDE"], "PLUS", "~"),
     ("JP_PIPE", ["PIPE"], "LS(0x89)", "|"),
@@ -194,4 +194,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
